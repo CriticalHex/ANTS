@@ -22,7 +22,7 @@ class Ants():
         if self.hunger_level > 0:
             self.hunger_level -= 1
     def get_info():
-        print("Class: ", self.type, ", Hunger: ", self.hunger, ", Lifetime: ", self.time_alive, " Days, Position: ", )
+        print("Class: ", self.type, ", Hunger: ", self.hunger, ", DaysInJob: ", self.time_alive, " Days, Position: ", )
         if self.hunger_level < 0:
                 self.hunger_level = 0
         if hunger_level >= 10:
@@ -58,3 +58,4 @@ while colony[0].type != "Queen":
     colony[i].pass_time()
     colony[i].move()
     colony[i].get_info()
+    colony[i].eat()
